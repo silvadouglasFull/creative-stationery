@@ -1,6 +1,6 @@
 export type Link = {
     id: string | number
     route: string
-    nameSocialMidia: string
+    nameSocialMidia: 'Whatsapp' | 'Instagram'
     icon?: string
 }

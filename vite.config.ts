@@ -48,7 +48,7 @@ export default defineConfig({
       "@hooks/*": `${root}/hooks/*`,
       "@layouts/*": `${root}/layouts/*`,
       "@pages/*": `${root}/pages/*`,
-      "@pagesHome/*": `${root}/pages/home/*`,
+      "@modules/*": `${root}/modules/*`,
       "@pagesAboutUs/*": `${root}/pages/aboutUs/*`,
       "@pagesContacts/*": `${root}/pages/contacts/*`,
       "@pagesServices/*": `${root}/pages/services/*`,

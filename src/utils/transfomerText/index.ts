@@ -128,3 +128,14 @@ export function replaceMultiple(
     const pattern = new RegExp(targets.join('|'), 'g');
     return input.replace(pattern, replacement);
 }
+
+/**
+ * Converte um número para o formato de moeda brasileira (R$).
+ * @param value Número a ser formatado
+ * @returns String formatada em moeda brasileira
+ * @example
+ * formatToBRL(1234.56); // "R$ 1.234,56"
+ */
+export function formatToBRL(value: number): string {
+    return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+}

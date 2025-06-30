@@ -1,9 +1,11 @@
+import breadcrumpsContact from "@assets/imaginacaoArte/breadCrumps/contact.png";
+import breadcrumpsProducts from "@assets/imaginacaoArte/breadCrumps/products.png";
 import logo from '@assets/imaginacaoArte/logo.png';
 import slide1 from "@assets/imaginacaoArte/slides/1.jpg";
 import slide2 from "@assets/imaginacaoArte/slides/2.jpg";
 import slide3 from "@assets/imaginacaoArte/slides/3.jpg";
 import type { BreadCrumps, Slide } from "@flavor/assets/types";
-export { logo, slide1, slide2, slide3 };
+export { breadcrumpsContact, breadcrumpsProducts, logo, slide1, slide2, slide3 };
 export const slides: Slide[] = [
     {
         id: 1,
@@ -27,4 +29,15 @@ export const slides: Slide[] = [
         subtitle: "A Helô sempre está pronta para te ajudar a despertar seu lado criativo!",
     },
 ];
-export const breadCrumps: BreadCrumps[] = []
+export const breadCrumps: BreadCrumps[] = [
+    {
+        id: 0,
+        midia: breadcrumpsContact,
+        url: '/contacts'
+    },
+    {
+        id: 1,
+        midia: breadcrumpsProducts,
+        url: '/products'
+    }
+]

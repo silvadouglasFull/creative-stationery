@@ -1,6 +1,7 @@
 import type { Link as TSocialMidia } from "@components/footer/links/socialMidia/link/types";
 import type { Contact, Link } from "@flavor/links/types";
 import { formatPhoneNumber } from "@utils/form/mask/phone";
+export const whatsapp = '19993507007'
 export const links: Link[] = [
     { id: 1, namePage: "Home", route: "/" },
     { id: 2, namePage: "Produtos", route: "/products" },
@@ -10,7 +11,7 @@ export const socialMidia: TSocialMidia[] = [
     {
         id: 1,
         nameSocialMidia: 'Whatsapp',
-        route: 'https://api.whatsapp.com/send?phone=5519993507007',
+        route: `https://wa.me/55${whatsapp}`,
         icon: 'fa-brands fa-whatsapp',
     },
     {
@@ -25,6 +26,6 @@ export const contact: Contact[] = [
     {
         id: 2,
         type: 'Whatsapp',
-        text: formatPhoneNumber('19993507007', 'pt'),
+        text: formatPhoneNumber(whatsapp, 'pt'),
     }
 ]

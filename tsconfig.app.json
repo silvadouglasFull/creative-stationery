@@ -12,7 +12,6 @@
       "@hooks/*": ["./src/hooks/*"],
       "@layouts/*": ["./src/layouts/*"],
       "@pages/*": ["./src/pages/*"],
-      "@pagesHome/*": ["./src/pages/home/*"],
       "@pagesAboutUs/*": ["./src/pages/aboutUs/*"],
       "@pagesContacts/*": ["./src/pages/contacts/*"],
       "@pagesServices/*": ["./src/pages/services/*"],
@@ -24,6 +23,7 @@
       "@styles/*": ["./src/styles/*"],
       "@navbarPublic/*": ["./src/components/navbarPublic/*"],
       "@publicRouter/*": ["./src/routes/public/*"],
+      "@modules/*": ["./src/modules/*"],
       "@router/*": ["./src/routes/*"],
       "@flavor/*": ["./src/flavor/*"]
     },
