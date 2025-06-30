@@ -7,8 +7,8 @@ import { Col, Row } from 'react-bootstrap';
 
 export const Footer = () => {
     return (
-        <footer className="bg-dark text-light p-4" id="contato">
-            <Row>
+        <footer className="bg-dark text-light" id="contato">
+            <Row className='p-3'>
                 <Col sm={6} md={4} className="mb-3">
                     <h5>Links</h5>
                     <Links items={links} />
@@ -22,7 +22,11 @@ export const Footer = () => {
                     <ContactLinks items={contact} />
                 </Col>
             </Row>
-            <CopyRight />
+            <Row>
+                <Col className='col-12'>
+                    <CopyRight />
+                </Col>
+            </Row>
         </footer>
     );
 };

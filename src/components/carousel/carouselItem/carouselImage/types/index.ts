@@ -1,8 +1,7 @@
+import type React from "react";
+
 export type CarouselImageProps = {
-    src: string;
+    src?: string;
     alt?: string;
-    fluid?: boolean;
-    rounded?: boolean;
-    className?: string;
 }
 export type ImageProps = React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>

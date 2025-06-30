@@ -11,62 +11,20 @@ export const slides: Slide[] = [
         textButton: "Começar a criar",
         title: "Papelaria Criativa e Personalizada",
         subtitle: "Crie Planners, capas para livros, Lembrancinhas e tudo mais do jeito que você quer!",
-        captionStyle: {
-            desktop: { top: '20%', margin: '0 auto' },
-            mobile: {
-                backgroundColor: 'rgba(255, 255, 255, 0.3)',
-                backdropFilter: 'blur(10px)',
-            }
-        },
-        styleMidia: {
-            width: '100vh',
-            height: '100vh',
-            objectFit: 'cover',
-            objectPosition: 'center 0%',
-            filter: 'brightness(0.9)',
-        }
     },
     {
         id: 2,
         midia: slide2,
-        textButton: "Começar a criar",
-        title: "Papelaria Criativa e Personalizada",
-        subtitle: "Crie Planners, capas para livros, Lembrancinhas e tudo mais do jeito que você quer!",
-        captionStyle: {
-            desktop: { top: '20%', margin: '0 auto' },
-            mobile: {
-                backgroundColor: 'rgba(255, 255, 255, 0.3)',
-                backdropFilter: 'blur(10px)',
-            }
-        },
-        styleMidia: {
-            width: '100vh',
-            height: '100vh',
-            objectFit: 'cover',
-            objectPosition: 'center 0%',
-            filter: 'brightness(0.9)',
-        }
+        textButton: "Ver produtos",
+        title: "Produtos perfeitos para Você",
+        subtitle: "Personalize do seu jeito, cardenos, postites, capaz para livros e muito mais!",
     },
     {
         id: 3,
         midia: slide3,
         textButton: "Começar a criar",
-        title: "Papelaria Criativa e Personalizada",
-        subtitle: "Crie Planners, capas para livros, Lembrancinhas e tudo mais do jeito que você quer!",
-        captionStyle: {
-            desktop: { top: '20%', margin: '0 auto' },
-            mobile: {
-                backgroundColor: 'rgba(255, 255, 255, 0.3)',
-                backdropFilter: 'blur(10px)',
-            }
-        },
-        styleMidia: {
-            width: '100vh',
-            height: '100vh',
-            objectFit: 'cover',
-            objectPosition: 'center 0%',
-            filter: 'brightness(0.9)',
-        }
+        title: "Conte com a Helô",
+        subtitle: "A Helô sempre está pronta para te ajudar a despertar seu lado criativo!",
     },
 ];
 export const breadCrumps: BreadCrumps[] = []
