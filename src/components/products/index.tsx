@@ -1,8 +1,8 @@
-import { CardItem } from "@components/category/item"
-import type { CardItems } from "@components/category/types"
+import { CardItem } from "@components/products/item"
+import type { CardItems } from "@components/products/types"
 import type React from "react"
 import { Card, Row } from "react-bootstrap"
-export const Category: React.FC<CardItems> = ({ items }: CardItems) => {
+export const Products: React.FC<CardItems> = ({ items }: CardItems) => {
     if (!items.length) {
         return (
             <Card>
@@ -13,9 +13,9 @@ export const Category: React.FC<CardItems> = ({ items }: CardItems) => {
         )
     }
     return (
-        <Row className={`"d-flex justify-content-sm-center justify-content-md-start align-items-center flex-wrap"`}>
+        <Row className="d-flex justify-content-sm-center justify-content-md-start align-items-center flex-wrap">
             {items
-                .sort((a, b) => a.name.localeCompare(b.name))
+                .sort((a, b) => a.title.localeCompare(b.title))
                 .map(item => (
                     <CardItem key={item.id} {...item} />
                 ))}

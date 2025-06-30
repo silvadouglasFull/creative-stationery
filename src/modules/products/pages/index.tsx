@@ -3,7 +3,7 @@ import { Products as List } from "@components/products"
 import { Title } from "@components/title"
 import { nameFlavor } from "@flavor/index"
 import { useFilterCategory } from "@modules/products/hooks/useFilterCategory"
-import { useGetSearchParams } from "../hooks/useGetSearchParams"
+import { useGetSearchParams } from "@modules/products/hooks/useGetSearchParams"
 export const Products = () => {
     const params = useGetSearchParams('category')
     const { items } = useFilterCategory(params)

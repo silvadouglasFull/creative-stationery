@@ -1,23 +1,28 @@
-import type { UseGroupItems, UseGroupItemsParams } from "@components/products/hooks/useGroupItems/types"
-import type { Item } from "@components/products/item/types"
+import type { UseGroupItems, UseGroupItemsParams } from "@components/category/hooks/useGroupItems/types"
+import type { Item } from "@components/category/item/types"
 import { groupBy } from "@utils/transformArray"
 import { useEffect, useState } from "react"
 
-export const useGroupItems = ({ products }: UseGroupItemsParams): UseGroupItems => {
+export const useGroupItems = ({ category }: UseGroupItemsParams): UseGroupItems => {
     const [items, setItems] = useState<Item[]>([])
     useEffect(() => {
         const groupItems = () => {
-            if (products.length) {
-                const itemsAgroupeds = groupBy({ array: products, key: 'category' })
+            if (category.length) {
+                const itemsAgroupeds = groupBy({ array: category, key: 'category' })
                 const items: Item[] = []
                 if ((itemsAgroupeds && typeof itemsAgroupeds === 'object') && (!Array.isArray(itemsAgroupeds))) {
                     Object.keys(itemsAgroupeds).forEach(key => {
                         if (itemsAgroupeds[key]?.length) {
-                            const { category, name, ...rest } = itemsAgroupeds[key][0]
+                            const { category, categoryId, id, description, imageUrl, price, stock } = itemsAgroupeds[key][0] as Item
                             items.push({
                                 category,
                                 name: category,
-                                ...rest,
+                                categoryId,
+                                id,
+                                description,
+                                imageUrl,
+                                price,
+                                stock
                             })
                         }
                     })
@@ -26,7 +31,7 @@ export const useGroupItems = ({ products }: UseGroupItemsParams): UseGroupItems 
             }
         }
         groupItems()
-    }, [products])
+    }, [category])
     return {
         items
     }
