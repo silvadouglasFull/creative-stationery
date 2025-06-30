@@ -9,9 +9,9 @@ export const useGetSearchParams = (queryParamsKey: string): UseGetSearchParams =
             if (search) {
                 const params = new URLSearchParams(search);
                 const queryParams = params.get(queryParamsKey);
-                if (queryParams) {
-                    setParams(queryParams)
-                }
+                setParams(queryParams ?? '')
+            } else {
+                setParams('')
             }
         }
         finCategory()
