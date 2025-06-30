@@ -1,21 +1,23 @@
+import { Button } from "@components/button"
 import { Products as List } from "@components/products"
+import { Title } from "@components/title"
 import { nameFlavor } from "@flavor/index"
-import { products } from "@flavor/products"
-import { Card } from "react-bootstrap"
+import { useFilterCategory } from "@modules/products/hooks/useFilterCategory"
+import { useGetSearchParams } from "../hooks/useGetSearchParams"
 export const Products = () => {
+    const params = useGetSearchParams('category')
+    const { items } = useFilterCategory(params)
     return (
         <section className="container p-3 d-flex flex-column justify-content-start align-items-center">
-            <Card className="p-3 border-0 d-block d-md-none text-center">
-                <Card.Title>
-                    Todos os produtos da {nameFlavor}
-                </Card.Title>
-            </Card>
-            <Card className="p-3 border-0 d-none d-md-block">
-                <Card.Title>
-                    Todos os produtos da {nameFlavor}
-                </Card.Title>
-            </Card>
-            <List items={products} />
+            <Title>
+                Todos os produtos da {nameFlavor}
+            </Title>
+            <List items={items} />
+            {params && (
+                <Button size="lg">
+                    Ver todos os produtos
+                </Button>
+            )}
         </section>
     )
 }

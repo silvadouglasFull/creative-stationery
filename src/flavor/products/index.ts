@@ -24,6 +24,7 @@ export {
 export const categories: Array<Item> = [
     {
         id: 5,
+        categoryId: 5,
         name: "",
         price: 1.0,
         imageUrl: adesivos,
@@ -32,6 +33,7 @@ export const categories: Array<Item> = [
     },
     {
         id: 3,
+        categoryId: 3,
         name: "",
         price: 1.2,
         imageUrl: borrachas,
@@ -40,6 +42,7 @@ export const categories: Array<Item> = [
     },
     {
         id: 1,
+        categoryId: 1,
         name: "",
         price: 24.9,
         imageUrl: cadernos,
@@ -48,6 +51,7 @@ export const categories: Array<Item> = [
     },
     {
         id: 8,
+        categoryId: 8,
         name: "",
         price: 1.0,
         imageUrl: bloquinhoAnotacoes,
@@ -56,6 +60,7 @@ export const categories: Array<Item> = [
     },
     {
         id: 2,
+        categoryId: 2,
         name: "",
         price: 2.5,
         imageUrl: canetas,
@@ -64,6 +69,7 @@ export const categories: Array<Item> = [
     },
     {
         id: 7,
+        categoryId: 7,
         name: "",
         price: 1.0,
         imageUrl: envelopes,
@@ -72,6 +78,7 @@ export const categories: Array<Item> = [
     },
     {
         id: 9,
+        categoryId: 9,
         name: "",
         price: 1.0,
         imageUrl: kitPersonalizado,
@@ -80,6 +87,7 @@ export const categories: Array<Item> = [
     },
     {
         id: 6,
+        categoryId: 6,
         name: "",
         price: 1.0,
         imageUrl: lembrancinhas,
@@ -88,6 +96,7 @@ export const categories: Array<Item> = [
     },
     {
         id: 4,
+        categoryId: 4,
         name: "",
         price: 3.9,
         imageUrl: product4,
@@ -98,6 +107,7 @@ export const categories: Array<Item> = [
 export const products: Array<Item> = [
     {
         id: 1,
+        categoryId: 1,
         name: "Caderno Universitário",
         price: 24.90,
         imageUrl: product1,
@@ -107,6 +117,7 @@ export const products: Array<Item> = [
     },
     {
         id: 2,
+        categoryId: 2,
         name: "Caneta Esferográfica Azul",
         price: 2.50,
         imageUrl: product2,
@@ -116,6 +127,7 @@ export const products: Array<Item> = [
     },
     {
         id: 3,
+        categoryId: 3,
         name: "Borracha Branca",
         price: 1.20,
         imageUrl: product3,
@@ -125,6 +137,7 @@ export const products: Array<Item> = [
     },
     {
         id: 4,
+        categoryId: 4,
         name: "Planners",
         price: 3.90,
         imageUrl: product4,
@@ -134,6 +147,7 @@ export const products: Array<Item> = [
     },
     {
         id: 5,
+        categoryId: 5,
         name: "Lápis Preto HB",
         price: 1,
         imageUrl: product5,

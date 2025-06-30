@@ -5,5 +5,6 @@ export type Item = {
     description?: string
     price?: number
     category: string
+    categoryId: number
     stock?: number
 }

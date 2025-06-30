@@ -13,7 +13,7 @@ export const Products: React.FC<CardItems> = ({ items }: CardItems) => {
         )
     }
     return (
-        <Row className="d-flex justify-content-sm-center justify-content-md-start align-items-center flex-wrap">
+        <Row className={`"d-flex justify-content-sm-center justify-content-md-start align-items-center flex-wrap"`}>
             {items
                 .sort((a, b) => a.name.localeCompare(b.name))
                 .map(item => (

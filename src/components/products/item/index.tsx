@@ -1,7 +1,7 @@
+import { Body } from "@components/products/item/body"
 import type { Item } from "@components/products/item/types"
 import type React from "react"
 import { Card, Col } from "react-bootstrap"
-import { Body } from "./body"
 export const CardItem: React.FC<Item> = ({ imageUrl, description, ...rest }: Item) => {
     return (
         <Col sm={12} md={4}>
